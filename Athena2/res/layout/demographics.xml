@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:weightSum="1" android:layout_height="wrap_content">
+        <TextView android:text="General Information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+        <EditText android:id="@+id/txtHC" android:hint="Health And Care No. (HC is add Automaticity)" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone|number"></EditText>
+        <EditText android:id="@+id/txtFName" android:hint="First Name" android:layout_width="fill_parent" android:inputType="textPersonName" android:layout_height="wrap_content" ></EditText>
+        <EditText android:id="@+id/txtLName" android:hint="Last Name" android:inputType="textPersonName" android:layout_width="fill_parent" android:layout_height="wrap_content"  ></EditText>
+        <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/spinGender"></Spinner>
+        <EditText android:inputType="date" android:id="@+id/txtDateOfBirth" android:hint="Date Of Birth" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+        <EditText android:inputType="number" android:id="@+id/txtAge" android:hint="Age (Auto Calculated)"  android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+        <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/spinMarital"></Spinner>
+        <TextView android:text="Address Information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView2" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+    	<EditText android:id="@+id/txtHouseNo" android:hint="House No." android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="text|phone"></EditText>
+    	<EditText android:id="@+id/txtAddress1" android:hint="Address line 1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textLongMessage"></EditText>
+    	<EditText android:id="@+id/txtAddress2" android:hint="Address line 2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textLongMessage"></EditText>
+    	<EditText android:id="@+id/txtPostCode" android:hint="Post Code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textLongMessage"></EditText>
+    	<TextView android:text="Contact Details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+    	<EditText android:inputType="phone" android:id="@+id/txtTelNo" android:hint="Telephone Number"  android:layout_width="fill_parent" android:layout_height="wrap_content" ></EditText>
+    	<EditText android:id="@+id/txtMobileNo" android:hint="Mobile Number" android:inputType="phone" android:layout_width="fill_parent" android:layout_height="wrap_content" ></EditText>
+    	<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txtNOK" android:inputType="textPersonName" android:hint="Next Of Kin"></EditText>
+    	<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/txtNOKC" android:inputType="phone" android:hint="Next Of Kin Contact Number"></EditText>
+    	</LinearLayout>
+</ScrollView>

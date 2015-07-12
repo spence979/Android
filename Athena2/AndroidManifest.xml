@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="test.athena"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="11" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:icon="@drawable/logo" android:label="@string/app_name">
+        <activity android:name=".Login" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MMENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_PatientInformation" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.PINFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_AddPatient" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.APATIENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity android:name=".tabActivity_Users" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.USERS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_AddContact" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+	            <intent-filter>
+	                <action android:name="android.intent.action.ACONTACT" />
+	                <category android:name="android.intent.category.DEFAULT" />
+	            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Appointments" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+	            <intent-filter>
+	                <action android:name="android.intent.action.AAPPOINTMENT" />
+	                <category android:name="android.intent.category.DEFAULT" />
+	            </intent-filter>
+        </activity>
+        	<activity android:name=".tabActivity_Demographic"/>
+        	<activity android:name=".tabActivity_Sympthoms"/>
+        	<activity android:name=".BloodTestActivity"/>
+        	<activity android:name=".tabActivity_PatientHistory"/>
+        	<activity android:name=".tabActivity_Contacts"/>
+        	<activity android:name=".tabActivity_Discharge"/>
+        	<activity android:name=".tabActivity_Medication"/>
+        	<activity android:name=".tabActivity_Bloods"/>
+        	<activity android:name=".tabActivity_ContactInformation"/>
+    </application>
+</manifest>

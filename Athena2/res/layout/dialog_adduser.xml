@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              android:orientation="vertical" >
+    <EditText android:id="@+id/txtAFName"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+              android:hint="First Name"
+              android:inputType="textPersonName"/>
+    <EditText android:id="@+id/txtALName"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+              android:hint="Last Name"
+              android:inputType="textPersonName"/>
+   <EditText android:id="@+id/txtAUsername"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+              android:hint="Username"
+              android:inputType="textPersonName" android:enabled="false"/>
+   	<EditText android:id="@+id/txtAPassword"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textColor="#000000"
+              android:hint="Password"
+              android:inputType="textPassword"/>
+    <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              android:orientation="horizontal">
+        		<Button android:text="Add User" android:id="@+id/btnDialogAdd" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        		<Button android:text="Cancel" android:id="@+id/btnDialogCancel" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+              </LinearLayout>
+</LinearLayout>

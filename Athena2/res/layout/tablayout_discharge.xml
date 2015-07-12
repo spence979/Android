@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableLayout
+  		android:orientation="vertical"
+  		android:layout_width="match_parent"
+  		android:layout_height="match_parent"
+  		android:stretchColumns="4"
+  		android:layout_gravity="left"
+  		android:id="@+id/tblDischarge">
+  		<TableRow android:id="@+id/rowDischargeRow">
+  			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Discharge Information"></TextView>
+  		</TableRow>
+  		<TableRow android:id="@+id/rowDischargeRow1">
+  			<TextView android:layout_column="0" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Admission Date:" ></TextView>
+  			<EditText android:layout_column="1" android:id="@+id/txtAdmissionDate" android:layout_width="250dp"/>
+  			<TextView android:layout_column="2" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Discharge Date:" ></TextView>
+  			<EditText android:layout_column="3" android:id="@+id/txtDischargeDate" android:layout_width="250dp"/>
+  		</TableRow>
+  		<TableRow android:id="@+id/rowDischargeRow2">
+  			<TextView android:layout_column="0" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Ward:" ></TextView>
+  			<EditText android:layout_column="1" android:id="@+id/txtWard" />
+  			<TextView android:layout_column="2" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Consultant:" ></TextView>
+  			<EditText android:layout_column="3" android:id="@+id/txtConsultant" />
+  		</TableRow>
+  		<TableRow android:id="@+id/rowDischargeRow3">
+  			<TextView android:layout_column="0" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Destination:"></TextView>
+  			<CheckBox android:layout_column="1" android:id="@+id/chkHome" android:text="Home" />
+  			<CheckBox android:layout_column="2" android:id="@+id/chkOther" android:text="Other" android:layout_width="match_parent"/>
+  			<EditText android:layout_column="3" android:id="@+id/txtOtherDestination" />
+  		</TableRow>
+  		<TableRow android:id="@+id/rowDischargeRow4">
+  			<TextView android:layout_column="0" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Home Visit Required:" ></TextView>
+  			<CheckBox android:layout_column="1" android:id="@+id/chkHomeVisitY" android:text="Yes" />
+  			<CheckBox android:layout_column="2" android:id="@+id/chkHomeVisitN" android:text="No" />
+  			<EditText android:layout_column="3" android:id="@+id/txt1stVisit" android:hint="Date Of First Visit"/>
+  		</TableRow>
+  		<TableRow android:id="@+id/rowDischargeRow5">
+  			<TextView android:layout_column="0" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Clinic Appt:" ></TextView>
+  			<CheckBox android:layout_column="1" android:id="@+id/chkClinicY" android:text="Yes" />
+  			<CheckBox android:layout_column="2" android:id="@+id/chkClinicN" android:text="No" />
+  		</TableRow>
+  		<TableRow>
+	  			<TextView android:layout_column="0" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Blood Test Taking:"></TextView>
+	  			<CheckBox android:layout_column="1" android:id="@+id/chkBNa" android:text="Na" />
+	  			<CheckBox android:layout_column="2" android:id="@+id/chkBK" android:text="K"  />
+	  			<CheckBox android:layout_column="3" android:id="@+id/chkBUrea" android:text="Urea" />
+	  			<CheckBox android:layout_column="4" android:id="@+id/chkBCreat" android:text="Creat"  />
+	  		</TableRow>	
+	  		<TableRow>
+	  			<CheckBox android:layout_column="1" android:id="@+id/chkBGlucose" android:text="Glucose" />
+	  			<CheckBox android:layout_column="2" android:id="@+id/chkBHb" android:text="Hb" />
+				<CheckBox android:layout_column="3" android:id="@+id/chkBWCC" android:text="WCC" />
+				<CheckBox android:layout_column="4" android:id="@+id/chkBPlatelets" android:text="Platelets" />
+			</TableRow>
+			<TableRow>
+				<CheckBox android:layout_column="1" android:id="@+id/chkBTFT" android:text="TFT" android:layout_width="match_parent" />
+				<CheckBox android:layout_column="2" android:id="@+id/chkBLFT" android:text="LFT" android:layout_width="match_parent" />	  		
+			</TableRow>
+	    <TextView android:layout_height="wrap_content" android:id="@+id/Comments" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Other Comments:"></TextView>
+		<EditText android:layout_width="match_parent" android:inputType="textMultiLine" android:layout_height="111dp" android:id="@+id/txtDischargeComments"></EditText>
+	</TableLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:icon="@drawable/ic_menu_new" android:title="Add New Appointment" android:id="@+id/mnuAddAppointment" android:showAsAction="always|withText" android:orderInCategory="2"/>
+	<item android:title="Add New Patient" android:id="@+id/mnuAddPatient" android:icon="@drawable/ic_action_user_add" android:showAsAction="always|withText" android:orderInCategory="3"></item>
+	<item android:title="Close" android:id="@+id/mnuAddClose" android:icon="@drawable/ic_menu_stop" android:showAsAction="always|withText" android:orderInCategory="4"></item>
+	<item android:title="Search" android:actionViewClass="android.widget.SearchView" android:id="@+id/mnu_search" android:titleCondensed="Search" android:showAsAction="always|withText" android:orderInCategory="1"/>
+</menu>

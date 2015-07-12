@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Athena 2.0</string>
+    <string-array name="status">
+    	<item>Married</item>
+    	<item>Single</item>
+    </string-array>
+    <string-array name="NYHA">
+    <item>Unknown</item>
+    	<item>Type 1</item>
+    	<item>Type 2</item>
+    	<item>Type 3</item>
+    	<item>Type 4</item>
+    </string-array>
+    <string-array name="Smoker">
+    	<item>Unknown</item>
+    	<item>Yes</item>
+    	<item>No</item>
+    	<item>Ex-</item>
+    </string-array>
+    <string-array name="ContactType">
+        <item>Planned</item>
+        <item>On Request</item>
+    </string-array>
+    <string-array name="ContactAt">
+    	<item>Home</item>
+    	<item>Clinic</item>
+        <item>Phone</item>
+        <item>In Patient</item>
+    </string-array>
+    <string-array name="CHF">
+    	<item>Unknown</item>
+    	<item>Ishaemic</item>
+    	<item>Cardiomyopathy</item>
+        <item>Valvular</item>
+        <item>Hypertension</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="Marital">
+    	<item>Unknown</item>
+        <item>Married</item>
+        <item>Single</item>
+        <item>Divorced</item>
+        <item>Widowed</item>
+    </string-array>
+	<string-array name="Oedema">
+		<item>Unknown</item>
+		<item>Skin Discolouration</item>
+		<item>Pitting Oedema</item>
+		<item>Aching OR Tender limbs</item>
+		<item>Stiff Joints</item>
+		<item>Weight Gain</item>
+		<item>Weight Loss</item>
+		<item>Raised Blood Pressure</item>
+		<item>Raised Pulse Rate</item>
+	</string-array>
+	<string-array name="Dtype">
+		<item>Type 1</item>
+		<item>Type 2</item>
+	</string-array>
+	<string-array name="MedicationType">
+		<item>~Please Select~</item>
+		<item>Loop Diuretic</item>
+		<item>Thiazide/Metolazone</item>
+		<item>Spironolactone</item>
+		<item>ACE / AT II</item>
+		<item>Betablocker</item>
+		<item>Digoxin</item>
+		<item>Ca++ Blocker</item>
+		<item>Aspirin</item>
+		<item>Warfarin</item>
+		<item>GTN Spray</item>
+		<item>Lipid Lowering Drug</item>
+		<item>Other Medication</item>
+	</string-array>
+	<string-array name="YesNO">
+		<item>Unknown</item>
+		<item>Yes</item>
+		<item>No</item>
+	</string-array>
+</resources>

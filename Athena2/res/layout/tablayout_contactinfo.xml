@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+      <TableLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="1"
+		    android:layout_gravity="left">
+		    <TableRow>
+		    	<TextView android:text="Contact Date:" android:layout_column="0"/>
+		    	<EditText android:id="@+id/txtContactDate" android:layout_column="1"/>
+		    </TableRow>
+		    <TableRow>
+		    	<TextView android:text="Contact Reason:" android:layout_column="0"/>
+		    	<Spinner android:id="@+id/spnContactReason" android:layout_column="1"/>
+		    </TableRow>
+		    <TableRow>
+		    	<TextView android:text="By:" android:layout_column="0"/>
+		    	<EditText android:id="@+id/txtContactBY" android:layout_column="1"/>
+		    </TableRow>
+		    <TableRow>
+		    	<TextView android:text="Follow Up:" android:layout_column="0"/>
+		    	<EditText android:id="@+id/txtFollowUp" android:layout_column="1"/>
+		    </TableRow>
+		    <TableRow>
+		    	<TextView android:text="At:" android:layout_column="0"/>
+		    	<Spinner android:id="@+id/spnContactAt" android:layout_column="1"/>
+		    </TableRow>
+    </TableLayout>
+</LinearLayout>

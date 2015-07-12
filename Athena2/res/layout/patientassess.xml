@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:weightSum="1" android:layout_height="698dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Date Admitted:"></TextView>
+        <EditText android:layout_width="200dp" android:layout_height="wrap_content" android:inputType="date" android:id="@+id/txtDateAdmitted"></EditText>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/lblDyspnoea" android:text="Dyspnoea"></TextView>
+        <CheckBox android:text="At Rest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkRest"></CheckBox>
+        <CheckBox android:text="On Exertion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkExertion"></CheckBox>
+        <CheckBox android:text="Noctural" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkNoctural"></CheckBox>
+        <CheckBox android:text="Orthopnoea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkOrthopnoea"></CheckBox>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/lblOedema" android:text="Oedema?"></TextView>
+        <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/spinType"></Spinner>
+        <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/spinWhere"></Spinner>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/txtOedema"></EditText>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other Issues"></TextView>
+        <CheckBox android:text="Fatigue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkFatigue"></CheckBox>
+        <CheckBox android:text="Dizziness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkDizziness"></CheckBox>
+        <CheckBox android:text="Chest Pain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkChest"></CheckBox>
+        <CheckBox android:text="Palpitations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkPalpitations"></CheckBox>
+        <CheckBox android:text="Cough" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkCough"></CheckBox>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/lblSComments" android:text="Comments"></TextView>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/txtComments"></EditText>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NYHA On Assessment" android:id="@+id/lblNYHAAss" android:textAppearance="?android:attr/textAppearanceMedium" ></TextView>
+        <Spinner android:id="@+id/spinNYHAAss" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Transfer Data" android:id="@+id/mnuTransfer" android:icon="@drawable/ic_menu_link" android:showAsAction="ifRoom|withText" android:orderInCategory="1"></item>
+    <item android:title="Get Database" android:id="@+id/mnuGet" android:icon="@drawable/ic_menu_link" android:showAsAction="ifRoom|withText" android:orderInCategory="2"></item>
+    <item android:title="Close" android:id="@+id/mnuClose" android:showAsAction="ifRoom|withText" android:icon="@drawable/ic_menu_stop" android:orderInCategory="3"></item>
+</menu>

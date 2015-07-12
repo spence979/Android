@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="Complete All Required Tabs Before Saving Patient" android:id="@+id/AddText" android:orderInCategory="0" android:enabled="false" android:showAsAction="always|withText"/>
+	<item android:title="Store Contact" android:id="@+id/Add" android:orderInCategory="1" android:icon="@drawable/ic_menu_database" android:enabled="true" android:showAsAction="always|withText"/>
+	<item android:id="@+id/Cancel" android:orderInCategory="2" android:icon="@drawable/ic_menu_stop" android:showAsAction="always|withText" android:title="Cancel Add Contact"/>
+	
+</menu>

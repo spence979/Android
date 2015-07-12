@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Medication:"></TextView>
+		<TableLayout
+		    android:layout_width="1000dp"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="5"
+		    android:layout_gravity="center"
+		    android:id="@+id/tblMedication">
+		    <TableRow>
+		        <TextView
+		        	android:id="@+id/lblDrugType"
+		        	android:textAppearance="?android:attr/textAppearanceMedium"
+		        	android:layout_width="200dp"
+		            android:layout_column="1"
+		            android:text="Medication Type"
+		            android:gravity="center"
+		            android:padding="3dip" android:layout_weight="1"/>
+		        <TextView
+		        	android:id="@+id/lblDrugName"
+		        	android:textAppearance="?android:attr/textAppearanceMedium"
+		        	android:layout_width="200dp"
+		        	android:layout_column="2"
+		            android:text="Medication Name"
+		            android:gravity="center"
+		            android:padding="3dip" android:layout_weight="1"/>
+		        <TextView
+		        	android:id="@+id/lblDrugDose"
+		        	android:textAppearance="?android:attr/textAppearanceMedium"
+		        	android:layout_width="200dp"
+		        	android:layout_column="3"
+		            android:text="Medication Dose"
+		            android:gravity="center"
+		            android:padding="3dip" android:layout_weight="1"/>
+		        <TextView
+		        	android:id="@+id/lblDrugFreq"
+		        	android:textAppearance="?android:attr/textAppearanceMedium"
+		        	android:layout_width="200dp"
+		        	android:layout_column="4"
+		            android:text="Medication FREQ"
+		            android:gravity="center"
+		            android:padding="3dip" android:layout_weight="1"/>
+		        <TextView
+		        	android:id="@+id/lblAdd"
+		        	android:textAppearance="?android:attr/textAppearanceMedium"
+		        	android:layout_width="200dp"
+		        	android:layout_column="4"
+		            android:text="Add Medication"
+		            android:gravity="center"
+		            android:padding="3dip" android:layout_weight="1"/>
+		    </TableRow>
+		    <TableRow>
+		        <Spinner
+		        	android:id="@+id/spinDrugType"
+		        	android:layout_width="200dp"
+		            android:layout_column="1"
+		            android:gravity="center"
+		            android:padding="5dip" android:layout_weight="1"/>
+		        <EditText
+		        	android:id="@+id/txtDrugName"
+		        	android:layout_width="200dp"
+		        	android:layout_column="2"
+		            android:hint="Medication Name"
+		            android:gravity="center"
+		            android:padding="5dip" android:layout_weight="1"/>
+		        <EditText
+		        	android:id="@+id/txtDrugDose"
+		        	android:layout_width="200dp"
+		        	android:layout_column="3"
+		            android:hint="Medication Dose"
+		            android:gravity="center"
+		            android:padding="5dip" android:layout_weight="1"/>
+		        <EditText
+		        	android:id="@+id/txtDrugFreq"
+		        	android:layout_width="200dp"
+		        	android:layout_column="4"
+		            android:hint="Medication FREQ"
+		            android:gravity="center"
+		            android:padding="5dip" android:layout_weight="1"/>
+		        <Button android:layout_column="5" android:layout_height="wrap_content" android:id="@+id/btnAddMedication" android:layout_width="wrap_content" android:text="Add To List"></Button>
+		    </TableRow>
+		</TableLayout>
+		<ListView android:id="@+id/lstMedications" android:layout_gravity="center" android:layout_height="600dp" android:layout_width="1000dp" ></ListView>
+		
+    
+</LinearLayout>

@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              android:orientation="vertical" >
+			    <TextView android:layout_height="wrap_content" android:text="Tri:" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+			    <EditText android:id="@+id/txtTri" android:hint="Tri" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+			    <TextView android:layout_height="wrap_content" android:text="Chol:" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+			    <EditText android:id="@+id/txtChol" android:hint="Chol" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+			    <TextView android:layout_height="wrap_content" android:text="HDL:" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+			    <EditText android:id="@+id/txtHDL" android:hint="HDL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+			    <TextView android:layout_height="wrap_content" android:text="LDL:" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+			    <EditText android:id="@+id/txtLDL" android:hint="LDL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+			    <Button android:text="Store" android:id="@+id/btnStore" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+			    <Button android:text="Cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/btnCCancel"></Button>
+</LinearLayout>

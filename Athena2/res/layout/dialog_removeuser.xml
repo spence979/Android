@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              android:orientation="vertical" >
+			    <TextView android:layout_height="wrap_content" android:text="Select User To Remove" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1"></TextView>
+			    <Spinner android:layout_height="wrap_content" android:id="@+id/spinUsers" android:layout_width="match_parent"></Spinner>
+			    <Button android:text="Remove User" android:id="@+id/btnDialogRemoveUser" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+			    <Button android:text="Cancel" android:id="@+id/btnDialogRemoveCancel" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>

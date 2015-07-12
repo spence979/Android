@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+    		android:id="@+id/tblTable1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="7">
+		    <TableRow>
+			    <TextView android:layout_column="0" android:text="CCSA" />
+			    <Spinner android:layout_column="1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/spnCCSA"></Spinner>
+        	</TableRow>
+        	<TableRow>
+			    <TextView android:layout_column="0" android:text="NYHA" />
+			    <Spinner android:layout_column="1"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/spnNYHA"></Spinner>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:text="Dyspnoea:"  android:padding="3dip"/>
+			    <CheckBox android:layout_column="1" android:text="At Rest" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/chkRest"></CheckBox>
+        		<CheckBox android:layout_column="2" android:text="On Exertion" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/chkExertion"></CheckBox>
+        		<CheckBox android:layout_column="3" android:text="Noctural" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/chkNoctural"></CheckBox>
+        		<CheckBox android:layout_column="4" android:text="Orthopnoea" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/chkOrthopnoea"></CheckBox>
+        	</TableRow>
+        	<TableRow android:id="@+id/rowOtherIssuesCheckBoxes" >
+	        	<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Other Issues"></TextView>
+		        <CheckBox android:layout_column="1" android:text="Fatigue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkFatigue"></CheckBox>
+		        <CheckBox android:layout_column="2" android:text="Dizziness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkDizziness"></CheckBox>
+		        <CheckBox android:layout_column="3" android:text="Chest Pain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkChest"></CheckBox>
+		        <CheckBox android:layout_column="4" android:text="Palpitations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkPalpitations"></CheckBox>
+		        <CheckBox android:layout_column="5" android:text="Cough" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkCough"></CheckBox>
+        		<CheckBox android:layout_column="6" android:text="Angina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/chkAngina"></CheckBox>
+        	</TableRow>
+        	<TableRow android:id="@+id/rowOtherIssuesScoreHeader" android:layout_height="wrap_content">
+	        	<TextView android:text="Fatigue" android:layout_column="1" android:layout_gravity="center" ></TextView>
+	        	<TextView android:text="Dizziness" android:layout_column="2" android:layout_gravity="center"></TextView>
+	        	<TextView android:text="Chest Pain" android:layout_column="3" android:layout_gravity="center"></TextView>
+	        	<TextView android:text="Palpitations" android:layout_column="4" android:layout_gravity="center"></TextView>
+	        	<TextView android:text="Cough" android:layout_column="5" android:layout_gravity="center"></TextView>
+	        	<TextView android:text="Angina" android:layout_column="6" android:layout_gravity="center"></TextView>
+	        	<TextView android:text="Generally" android:layout_column="7" android:layout_gravity="center"></TextView>
+        	</TableRow>
+        	<TableRow android:id="@+id/rowOtherIssuesScore" android:layout_height="wrap_content">
+        		<RadioGroup android:layout_column="1" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+        			<RadioButton android:text="No" android:id="@+id/radFatigue1" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Better" android:id="@+id/radFatigue2" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly better" android:id="@+id/radFatigue3" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Stable" android:id="@+id/radFatigue4" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly Worse" android:id="@+id/radFatigue5" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Worse" android:id="@+id/radFatigue6" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        		</RadioGroup>
+        		<RadioGroup android:layout_column="2" android:layout_height="wrap_content" >
+        			<RadioButton android:text="No" android:id="@+id/radDizziness1" android:layout_width="wrap_content" android:layout_height="wrap_content" ></RadioButton>
+        			<RadioButton android:text="Better" android:id="@+id/radDizziness2" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly better" android:id="@+id/radDizziness3" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Stable" android:id="@+id/radDizziness4" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly Worse" android:id="@+id/radDizziness5" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Worse" android:id="@+id/radDizziness6" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        		</RadioGroup>
+        		<RadioGroup android:layout_column="3" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+        			<RadioButton android:text="No" android:id="@+id/radChestPain1" android:layout_width="wrap_content" android:layout_height="wrap_content" ></RadioButton>
+        			<RadioButton android:text="Better" android:id="@+id/radChestPain2" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly better" android:id="@+id/radChestPain3" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Stable" android:id="@+id/radChestPain4" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly Worse" android:id="@+id/radChestPain5" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Worse" android:id="@+id/radChestPain6" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        		</RadioGroup>
+        		<RadioGroup android:layout_column="4" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+        			<RadioButton android:text="No" android:id="@+id/radPalpitations1" android:layout_width="wrap_content" android:layout_height="wrap_content" ></RadioButton>
+        			<RadioButton android:text="Better" android:id="@+id/radPalpitations2" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly better" android:id="@+id/radPalpitations3" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Stable" android:id="@+id/radPalpitations4" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly Worse" android:id="@+id/radPalpitations5" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Worse" android:id="@+id/radPalpitations6" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        		</RadioGroup>
+        		<RadioGroup android:layout_column="5" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+        			<RadioButton android:text="No" android:id="@+id/radCough1" android:layout_width="wrap_content" android:layout_height="wrap_content" ></RadioButton>
+        			<RadioButton android:text="Better" android:id="@+id/radCough2" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly better" android:id="@+id/radCough3" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Stable" android:id="@+id/radCough4" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly Worse" android:id="@+id/radCough5" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Worse" android:id="@+id/radCough6" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        		</RadioGroup>
+        		<RadioGroup android:layout_column="6" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+        			<RadioButton android:text="No" android:id="@+id/radAngina1" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Better" android:id="@+id/radAngina2" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly better" android:id="@+id/radAngina3" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Stable" android:id="@+id/radAngina4" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly Worse" android:id="@+id/radAngina5" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Worse" android:id="@+id/radAngina6" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        		</RadioGroup>
+        		<RadioGroup android:layout_column="7" android:layout_width="wrap_content" android:layout_height="wrap_content" >
+        			<RadioButton android:text="No" android:id="@+id/radGenerally1" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Better" android:id="@+id/radGenerally2" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly better" android:id="@+id/radGenerally3" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Stable" android:id="@+id/radGenerally4" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Slightly Worse" android:id="@+id/radGenerally5" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        			<RadioButton android:text="Worse" android:id="@+id/radGenerally6" android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+        		</RadioGroup>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Heart Rate:"></TextView>
+        		<EditText android:id="@+id/txtHR" android:hint="bpm" android:inputType="number"/>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rhythm:"></TextView>
+        		<Spinner android:layout_column="1" android:layout_weight="1" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/spnRhythm"></Spinner>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Blood Pressure:"></TextView>
+        		<EditText android:id="@+id/txtBP1" android:inputType="number"/>
+        		<EditText android:id="@+id/txtBP2" android:inputType="number"/>
+        	</TableRow>
+            <TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Oedema:"></TextView>
+        		<Spinner android:layout_column="1" android:layout_weight="1" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/spnOedema"></Spinner>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ascites:"></TextView>
+        		<Spinner android:layout_column="1" android:layout_weight="1" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/spnAscites"></Spinner>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weight:"></TextView>
+        		<EditText android:id="@+id/txtWS" android:hint="s (10.6)" android:inputType="numberDecimal"/>
+        		<EditText android:hint="lb (160.8)" android:id="@+id/txtWP" android:inputType="numberDecimal"/>
+        		<EditText android:hint="kg (74.88)" android:id="@+id/txtWK" android:inputType="numberDecimal"/>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JVP:"></TextView>
+        		<Spinner android:layout_column="1" android:layout_weight="1" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/spnJVP"></Spinner>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Creps:"></TextView>
+        		<Spinner android:layout_column="1" android:layout_weight="1" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/spnCreps"></Spinner>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Standing BP:"></TextView>
+        		<EditText android:id="@+id/txtSBP1" android:inputType="number"/>
+        		<EditText android:id="@+id/txtSBP2" android:inputType="number"/>
+        	</TableRow>
+        	<TableRow>
+        		<TextView android:layout_column="0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Heart Sounds:"></TextView>
+        		<Spinner android:layout_column="1" android:layout_weight="1" android:layout_width="200dp" android:layout_height="wrap_content" android:id="@+id/spnHeartSounds"></Spinner>
+        	</TableRow>
+        	<TableRow android:id="@+id/rowComments" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        		<TextView android:layout_column="0" android:text="Other Comments"/>
+        		<EditText android:layout_column="1" android:id="@+id/txtContactComments" android:inputType="textLongMessage"/>
+        	</TableRow>
+	</TableLayout>
+</ScrollView>

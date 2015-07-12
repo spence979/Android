@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              android:orientation="vertical" >
+			    <TextView android:layout_height="wrap_content" android:text="Enter the Health And Care Number of the patient you wish to delete below" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1"></TextView>
+			    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/txtDeletePatientID" android:inputType="phone|textPersonName">
+			        <requestFocus></requestFocus>
+			    </EditText>
+			    <Button android:text="Remove Patient" android:id="@+id/btnDialogRemovePatient" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+			    <Button android:text="Cancel" android:id="@+id/btnDialogRemovePatientCancel" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>
