@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deck"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back_of_cards"
+        android:layout_marginLeft="10dp"
+        android:layout_toStartOf="@+id/StartServer" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Putdeck"
+        android:background="#8000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="#8000"
+        android:id="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:id="@+id/MyCards"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/mygallery"
+            android:layout_alignParentStart="true">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal"
+        android:id="@+id/StartServer"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/txtIPAddress"
+        android:layout_centerHorizontal="true"
+        android:enabled="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cards:"
+        android:id="@+id/txtCardsInDeck"
+        android:layout_below="@+id/deck"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/deck"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cards Pickup: 1"
+        android:id="@+id/txtCardPickup"
+        android:textAlignment="center"
+        android:layout_below="@+id/txtCardsInDeck"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txtCardsInDeck"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="#8000"
+        android:id="@+id/txtIPAddress"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Server: "
+        android:id="@+id/txtServer"
+        android:layout_below="@+id/txtCardPickup"
+        android:layout_alignStart="@+id/txtCardPickup"
+        android:layout_toStartOf="@+id/txtIPAddress"
+        android:layout_alignEnd="@+id/txtCardPickup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="My Deck:"
+        android:id="@+id/txtMyDeck"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        android:id="@+id/btnSort"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

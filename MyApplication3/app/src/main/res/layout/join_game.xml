@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgLogo"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/card_game_icon"
+        android:layout_weight="0.09" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lblName"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.09"
+        android:text="@string/app_name" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Host Name:"
+        android:id="@+id/lblHostName"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIPAddr"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.09"
+        android:inputType="phone"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/btnConnectToGame"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
